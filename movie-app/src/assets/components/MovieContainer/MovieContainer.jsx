@@ -1,11 +1,17 @@
 import MovieCards from "../MovieCards/MovieCards";
-
 export default function MovieContainer({moviePosters}) {
+  console.log(moviePosters)
   return (
     <div>
-      <MovieCards 
-      moviePosters={moviePosters}
-      />
+      {moviePosters?.map((Poster,index) => (
+        <MovieCards 
+        Poster={Poster}
+        key={index}
+        />
+  ))}
+      
     </div>
   );
 }
+
+

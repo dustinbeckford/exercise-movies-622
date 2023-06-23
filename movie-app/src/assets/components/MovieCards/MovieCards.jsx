@@ -1,10 +1,10 @@
-export default function MovieCards({moviePosters}) {
+export default function MovieCards({Poster}) {
     return (
       <div>
         {/* poster */}
-        <img src={moviePosters?.Poster} alt="" />
+        <img src={Poster?.Poster} alt="" />
     
-        <h1>Title</h1>
+        <h1>Search for a movie</h1>
       </div>
     );
   }
